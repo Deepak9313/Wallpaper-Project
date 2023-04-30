@@ -1,0 +1,31 @@
+/* image section */
+*{
+    margin:0px;
+}
+div.head::before{
+    content:"";
+    background-image: url('paintp.jpg');
+    height:400px;
+    width:360;
+}
+div.head{
+    height:55vh;
+    animation:roll 5s 1;
+}
+@keyframes roll{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+div.content{
+    margin:20px;
+}
+div.content p{
+    font-size:15px;
+}

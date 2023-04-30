@@ -1,0 +1,92 @@
+div.head{
+    display:flex;
+    justify-content: center;
+    font-size: 54px;
+    color:azure;
+    text-decoration: underline;
+    height:82vh;
+}
+div.head::before{
+    content:"";
+    position:absolute;
+   background-image: url('paintd.jpg');
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:73vh;
+    z-index:-1;
+    top:0px;
+    box-shadow: 0px 10px 29px grey;
+}
+div.content{
+    margin:20px 73px;
+    font-size: 34px;
+}
+div.content h3{
+    
+    color:mediumvioletred;
+    width:fit-content;
+    padding:12px;
+    animation:roll 5s 1;
+}
+@keyframes roll{
+    0%{
+        background-color:white;
+        color:mediumvioletred;
+    }
+    25%{
+        background-color:pink;
+        color:bisque;
+        transform: rotate(60deg);
+    }
+    40%{
+        background-color:pink;
+        color:bisque;
+        transform:translate(400px , 0px);
+    }
+    50%{
+        background-color:pink;
+        color:bisque;
+        transform: rotate(160deg);
+        transform:translate(400px,0px);
+    }
+    68%{
+        background-color:teal;
+        color:black;
+        transform:rotate(260deg);
+    }
+    75%{
+        background-color:pink;
+        color:bisque;
+        transform: rotate(180deg);
+        transform:translate(600px , 0px);
+    }
+    100%{
+        background-color:mediumvioletred;
+        color:whitesmoke;
+        transform: rotate(360deg);
+        transform:translate(800px , 0px);
+    }
+}
+
+div.footer{
+    background-color:black;
+    padding:10px 0px;
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-size:19px;
+    animation:foot 5s infinite;
+}
+@keyframes foot{
+    0%{
+        color:red;
+    }
+    50%{
+        color:blanchedalmond;
+    }
+    100%{
+        color:yellowgreen;
+    }
+}
